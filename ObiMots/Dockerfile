@@ -4,4 +4,4 @@ RUN mvn -B clean package -DskipTests
 FROM openjdk:17
 COPY --from=build target/*.jar ObiMots.jar
 #ENV SPRING_PROFILES_ACTIVE=$(PROFILE)
-ENTRYPOINT ["java", "-jar", "-Dserver.port=8080","ObiMots.jar"]
+ENTRYPOINT ["java", "-jar", "-Dserver.port=8081","ObiMots.jar"]
