@@ -16,6 +16,7 @@ import org.springframework.stereotype.Service;
 public class AppUserServiceIpml implements AppUserService{
 
     private final ModelMapper modelMapper;
+
     private final AppUserRepository appUserRepository;
     @Override
     public RegisterResponse register(RegisterRequest registerRequest) {
